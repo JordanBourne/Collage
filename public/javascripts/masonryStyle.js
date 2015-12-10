@@ -1,8 +1,14 @@
-$(document).ready( function() {
+setTimeout(function() {
+    var elem = document.querySelector('.grid');
+    var msnry = new Masonry( elem, {
+        itemSelector: '.grid-item'
+    });
+}, 500);
 
-  $('.grid').masonry({
+
+
+$('.grid').masonry({
+    columnWidth: '.grid-sizer',
     itemSelector: '.grid-item',
-    columnWidth: 160
-  });
-  
+    percentPosition: true
 });
