@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pin Viewer</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+        <script src="javascripts/jquery-1.11.3.js"></script>
+        <script src='javascripts/angular.min.js'></script>
+        <script src='javascripts/angular-ui-router.js'></script>
+        <script src='javascripts/masonry.pkgd.js'></script>
+        <script src='javascripts/masonryStyle.js'></script>
+        <script src="javascripts/angularApp.js"></script> 
+    </head>
+    <body ng-app = "app" ng-controller = "MainCtrl">
+        <div class = "pageWrapper">
+            <div class = "mainPage">
+                <div class = "navBar">
+                    <a href = "#/profile"><div class = "appName">{{user.username}}</div></a>
+                    <a href = "/login/twitter/"><div class = "navButton" ng-hide = "user.username">Log In</div></a>
+                    <a href ng-click = "logout()"><div class = "navButton" ng-show = "user.username">Log Out</div></a>
+                </div>
+                
+                <div class = "pageTitle"><a href = "#/">Pin Viewer</a></div>
+                
+                <div class = "postImage">
+                    <button class = "postImageButton" ng-click = "postImage()">Post Image</button>
+                </div>
+                <div class = "error">{{error}}</div>
+            </div>
+            
+            <div class = "pageContent">
+            
+            <ui-view></ui-view>
+            
+            </div>
+        </div>
+    </body>
+</html>

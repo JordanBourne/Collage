@@ -1,0 +1,29 @@
+<div class = "searchBar">
+    <form ng-submit = "searchAuthor()" class = "searchSection">
+        <input type = "text" class = "searchInput" ng-model = "byAuthor" placeholder = "Search Authors">
+        <input type = "submit" class = "searchSubmit" value = "Search">
+    </form>
+    <div class = "spacer"></div>
+    <form ng-submit = "searchTag()" class = "searchSection">
+        <input type = "text" class = "searchInput" ng-model = "byTag" placeholder = "Search Tags">
+        <input type = "submit" class = "searchSubmit" value = "Search">
+    </form>
+</div>
+<!--
+<div class = "imageFrame" ng-repeat = "image in images">
+    <img ng-src = "{{image.link}}" class = "image">
+    <div class = "imageTitle">{{image.title}}</div>
+    <div class = "imageAuthor">Posted by: {{image.author}}</div>
+    <div class = "imageUpvote"><a href ng-click = "upvote(image)"><i class="fa fa-thumbs-o-up"></i></a> {{image.upvotes}}</div>
+    <div class = "imageTags" ng-repeat = "tag in image.tags">{{tag}}&nbsp;</div>
+</div>-->
+
+<div class = "grid">
+    <div class = "grid-item" ng-repeat = "image in images">
+        <img ng-src = "{{image.link}}" class = "image">
+        <div class = "imageTitle">{{image.title}}</div>
+        <div class = "imageAuthor">Posted by: {{image.author}}</div>
+        <div class = "imageUpvote"><a href ng-click = "upvote(image)"><i class="fa fa-thumbs-o-up"></i></a> {{image.upvotes}}</div>
+        <div class = "imageTags" ng-repeat = "tag in image.tags">{{tag}}&nbsp;</div>
+    </div>
+</div>

@@ -1,0 +1,269 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.mainPage {
+    background-color: #1A1A1A;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 400px;
+    text-align: center;
+    box-shadow: 10px;
+    box-shadow: 10px 10px 15px #888888;
+}
+
+.pageContent {
+    position: relative;
+    margin-left: 400px;
+    padding: 100px;
+}
+
+.navBar {
+    height: 50px;
+    top: 0px;
+    width: 70%;
+    margin: auto;
+    color: white;
+}
+
+.appName {
+    position: relative;
+    top: 10px;
+    float: left;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navButton {
+    position: relative;
+    top: 10px;
+    float: right;
+}
+
+.pageTitle {
+    position: relative;
+    top: 28%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: white;
+}
+
+.pageTitle a {
+    color: white;
+    text-decoration: none;
+}
+
+.newImages {
+    position: relative;
+    top: 60%;
+    transform:  translateY(-80%);
+    width: 100%;
+    height: 34%;
+    background-color: white;
+    box-shadow: -2px  green;
+}
+
+.imageDisplay {
+    display: inline-block;
+    width: 14%;
+    margin: 1%;
+    border: 2px solid #3F3F3F;;
+    background-color: #6F6F6F;
+    height: 80%;
+    padding: 1%;
+}
+
+.splashImg {
+    width: 100%;
+    border: 2px solid #3F3F3F;;
+}
+
+.postImage {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.postImageButton {
+    background: none;
+    border: 1px solid;
+    color: #F46305;
+    transition: all .5s ease;
+    font-size: 30px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.postImageButton:hover {
+    color: #1A1A1A;
+    border-color: #F46305;
+    background-color: #F46305;
+}
+
+.postImageButton:focus {
+    outline: none;
+}
+
+
+.newImageContainer {
+    position: absolute;
+    top: 200px;
+    left:50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(26,26,26,.9);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+.newImageHeader {
+    font-size: 40px;
+}
+
+.newImageText {
+    font-size: 20px;
+}
+
+.newImageInput {
+    font-size: 20px;
+    width: 60%;
+    margin: 5px;
+    border: 1px solid white;
+    background: none;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.newImageButton {
+    font-size: 18px;
+    width: 40%;
+    margin: 5px;
+    border: 1px solid white;
+    background: none;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 15px;
+    transition: all .5s ease;
+}
+
+.newImageInput:focus {
+    outline: none;
+}
+
+.newImageButton:focus {
+    outline: none;
+}
+
+.newImageButton:hover {
+    outline: none;
+    background-color: white;
+    color: #1A1A1A;
+    border-color: white;
+}
+
+.imageFrame {
+    width: 48%;
+    float: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.image {
+    width: 80%;
+}
+
+.searchBar {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.spacer {
+    display: inline-block;
+    width: 20px;
+}
+
+.searchSection {
+    display: inline-block;
+}
+
+.searchInput {
+    border: 1px solid black;
+    font-size: 18px;
+    font-family:  'Quicksand', sans-serif;
+}
+
+.imageTags {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.searchSubmit {
+    border: 1px solid black;
+    background: none;
+    font-size: 18px;
+    transition: all .5s ease;
+    font-family:  'Quicksand', sans-serif;
+}
+
+.searchSubmit:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.searchInput:focus, .searchSubmit:focus {
+    outline: none;
+}
+
+.error {
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 66%;
+    left: 109px;
+}
+
+.profilePage {
+    font-size: 40px;
+}
+
+.deleteImage {
+    border: 1px solid #B00E1D;
+    color: #B00E1D;
+    background: none;
+    transition: all .5s ease;
+}
+
+.deleteImage:focus {
+    outline: none;
+}
+
+.deleteImage:hover {
+    color: white;
+    border-color: #B00E1D;
+    background-color: #B00E1D;
+}
+
+.grid-item { 
+    width: 200px; 
+    float: left;
+    border: 1px solid black;
+}

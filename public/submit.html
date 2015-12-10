@@ -1,0 +1,15 @@
+<div class = "newImageContainer">
+    <div class = "newImageHeader">Post a New Image</div>
+    <form ng-submit = "submitImage()">
+        <div class = "newImageText">What do you want to call it?</div>
+        <input type = "text" ng-model = "title" placeholder = "Title" class = "newImageInput" required>
+        
+        <div class = "newImageText">Where did you find it?</div>
+        <input type = "text" ng-model = "link" placeholder = "Image Link" class = "newImageInput" required>
+        
+        <div class = "newImageText">Tag It</div>
+        <input type = "text" ng-model = "tags" placeholder = "Tags" class = "newImageInput" required>
+        <br>
+        <input type = "submit" class = "newImageButton">
+    </form>
+</div>
