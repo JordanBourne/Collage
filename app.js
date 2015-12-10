@@ -49,7 +49,7 @@ app.use(function(req, res, next) {
 passport.use(new Strategy({
     consumerKey: '12ulEIoDIqWT1Jn4db8leKNH5',
     consumerSecret: '4J6zdrcDkVIgLXtCgWz8VaIr6A0RyHPC6btxqAgat0xjJtBgjT',
-    callbackURL: 'http://127.0.0.1:3000/login/twitter/return'
+    callbackURL: 'https://pin-viewer.herokuapp.com/login/twitter/return'
   },
   function(token, tokenSecret, profile, cb) {
     User.findOne({username: profile.screen_name}, function(err, response) {
