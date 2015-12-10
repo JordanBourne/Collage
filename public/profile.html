@@ -2,10 +2,14 @@
     Manage Your Images
 </div>
 
-<div class = "imageFrame" ng-repeat = "image in images">
-    <img ng-src = "{{image.link}}" class = "image">
-    <div class = "imageTitle">{{image.title}}</div>
-    <div class = "imageAuthor">Posted by: {{image.author}}</div>
-    <button ng-click = "delete(image, $index)" class = "deleteImage">Delete</button>
-    <div class = "imageTags" ng-repeat = "tag in image.tags">{{tag}}&nbsp;</div>
+<div class = "row">
+    <div class = "item" ng-repeat = "image in images">
+        <div class = "well">
+            <img ng-src = "{{image.link}}" class = "image">
+            <div class = "imageTitle">{{image.title}}</div>
+            <div class = "imageAuthor">Posted by: {{image.author}}</div>
+            <button ng-click = "delete(image, $index)" class = "deleteImage">Delete</button><br>
+            <div class = "imageTags" ng-repeat = "tag in image.tags">{{tag}}&nbsp;</div>
+        </div>
+    </div>
 </div>

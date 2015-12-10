@@ -84,10 +84,9 @@ router.delete('/images/:image', function(req, res, next) {
     });
 });
 
-/*router.get('/profile',
-  require('connect-ensure-login').ensureLoggedIn(),
-  function(req, res){
-    res.render('profile', { user: req.user });
-  });*/
+router.get('/logout', function(req, res){
+    req.logout();
+    res.json();
+});
 
 module.exports = router;

@@ -59,6 +59,12 @@ app.factory('auth', ['$http', function($http) {
         });
     };
     
+    o.logout = function () {
+        $http.get('/logout').success(function() {
+            window.location.href = "#/home"
+        });
+    }
+    
     return o;
 }]);
 
@@ -136,6 +142,10 @@ app.controller('MainCtrl', [
             images.searchTag($scope.byTag);
         }
         
+        $scope.logout = function () {
+            auth.logout();
+            $scope.user = "";
+        }
     }
 ]);
 

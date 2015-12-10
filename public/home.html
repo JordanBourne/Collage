@@ -10,16 +10,14 @@
     </form>
 </div>
 
-<div class = "grid">
-    <div class = "grid-item" ng-repeat = "image in images">
-        <img ng-src = "{{image.link}}" class = "image">
-        <div class = "imageTitle">{{image.title}}</div>
-        <div class = "imageAuthor">Posted by: {{image.author}}</div>
-        <div class = "imageUpvote"><a href ng-click = "upvote(image)"><i class="fa fa-thumbs-o-up"></i></a> {{image.upvotes}}</div>
-        <div class = "imageTags" ng-repeat = "tag in image.tags">{{tag}}&nbsp;</div>
+<div class = "row">
+    <div class = "item" ng-repeat = "image in images">
+        <div class = "well">
+            <img ng-src = "{{image.link}}" class = "image">
+            <div class = "imageTitle">{{image.title}}</div>
+            <div class = "imageAuthor">Posted by: {{image.author}}</div>
+            <div class = "imageUpvote"><a href ng-click = "upvote(image)"><i class="fa fa-thumbs-o-up"></i></a> {{image.upvotes}}</div>
+            <div class = "imageTags" ng-repeat = "tag in image.tags">{{tag}}&nbsp;</div>
+        </div>
     </div>
 </div>
-
-
-
-<script src='javascripts/masonryStyle.js'></script>
