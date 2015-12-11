@@ -1,7 +1,7 @@
 # Build a Pinterest Clone
 
 Link: https://pin-viewer.herokuapp.com/#/home
-Tools Used: MongoDB, Express.js, Angular.js, Node.js, Bootstrap css, HTML5 CSS3
+Tools Used: MongoDB, Express.js, Angular.js, Node.js, Bootstrap css, HTML5, CSS3
 
 Objective: Build a full stack JavaScript app that successfully reverse-engineers this: http://stark-lowlands-3680.herokuapp.com/ and deploy it to Heroku.
 
